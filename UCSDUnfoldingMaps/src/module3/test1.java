@@ -15,8 +15,9 @@ public class test1 extends PApplet {
 	
 	public void draw () {
 		
-		backgroundImg.resize(200, 200);
+		backgroundImg.resize(0, 200); //0 so after giving height Java will automatically adjust the width to fit the image (dynamic)
 		image(backgroundImg, 0,0);
+		ellipse(width/4,height/5,width/5,height/5);
 		
 	}
 	
